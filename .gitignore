@@ -1,0 +1,45 @@
+# ---------------------------------------------------------------------------
+# Secrets and local configuration
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+GeoAgent/config.ini
+**/secrets.toml
+*.key
+*.pem
+
+# ---------------------------------------------------------------------------
+# Runtime outputs and generated files
+# ---------------------------------------------------------------------------
+# Output/ itself is kept in the repository (Output/.gitkeep); reference
+# solutions are large and are not published.
+Output/solutions/
+Agents/workspace/
+Eval/scratch/
+GeoAgent/data_storage/
+scratch/
+*.log
+
+# ---------------------------------------------------------------------------
+# Benchmark datasets (several GB; see Data/README.md)
+# ---------------------------------------------------------------------------
+Data/*/
+
+# ---------------------------------------------------------------------------
+# Python caches
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+*.egg-info/
+
+# ---------------------------------------------------------------------------
+# Editor / OS / local history
+# ---------------------------------------------------------------------------
+.history/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

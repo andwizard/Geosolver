@@ -1,0 +1,23 @@
+GeoSolver
+Copyright 2026 The GeoSolver Authors
+
+This product includes software and data from third parties:
+
+1. GeoAgent (GeoAgent/)
+   This directory is adapted from:
+     Title:   GeoAgent: a hierarchical LLM-based multi-agent architecture for
+              autonomous spatial analysis
+     Creator: Lin (see the original record for the full author list)
+     Source:  https://doi.org/10.6084/m9.figshare.29145008
+     License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+              https://creativecommons.org/licenses/by/4.0/
+   Copyright remains with the original authors. Changes were made for use with
+   GeoSolver; the modifications are described in GeoAgent/README.md. GeoAgent/
+   is distributed under CC BY 4.0 and is not licensed under the Apache License,
+   Version 2.0.
+
+2. Benchmark data (Data/)
+   The GeoBenchX, GeoAnalystBench, GeoColabs, GeoJsonAgent, Indoor, Location,
+   Mining, and PoiMSN datasets are third-party material, each subject to the
+   terms of its original source. They are not licensed under the Apache
+   License, Version 2.0. See Data/README.md.

@@ -1,0 +1,9 @@
+[server]
+# The auto-reload watcher inspects every imported module's __path__, which
+# triggers transformers' lazy import of a broken torchaudio native extension
+# in this env. "none" disables source-file watching (no hot-reload on save;
+# use the "Rerun" button or restart to pick up edits).
+fileWatcherType = "none"
+
+[browser]
+gatherUsageStats = false

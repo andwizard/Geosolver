@@ -1,0 +1,73 @@
+# GeoSolver Python dependencies.
+#
+# Versions pinned to the validated `geo` conda environment (the one the smoke
+# tests run under). The geospatial stack (GDAL/GEOS/PROJ and the libraries built
+# on it) is best installed via conda-forge first; see README.md.
+# A full environment freeze is kept in requirements.full.txt.bak for reference.
+
+# --- Geospatial stack ---
+# Imported directly by the project and/or by agent-generated code run in the
+# sandbox. rtree backs geopandas spatial indexing/joins.
+geopandas==1.1.2
+rasterio==1.4.4
+shapely==2.1.2
+pyproj==3.6.1
+pyogrio==0.12.1
+fiona==1.10.1
+rtree==1.4.1
+geojson==3.2.0
+contextily==1.7.0
+folium==0.20.0
+mapclassify==2.10.0
+osmnx==2.1.0
+Cartopy==0.25.0
+geopy==2.4.1
+rioxarray==0.22.0
+xarray==2026.4.0
+netCDF4==1.7.4
+
+# --- Spatial analysis (PySAL family + extras) ---
+# Not imported by the project itself, but commonly used by agent-generated code
+# for spatial statistics, districting, and thematic mapping.
+pysal==26.1
+libpysal==4.14.1
+esda==2.8.2
+momepy==0.11.0
+spopt==0.7.0
+segregation==2.5.4
+geoplot==0.5.1
+geovoronoi==0.4.0
+whitebox==2.3.6
+leafmap==0.61.0
+pystac==1.14.3
+pystac-client==0.9.0
+rio-cogeo==7.0.1
+
+# --- Scientific / data ---
+numpy==2.2.0
+pandas==2.3.3
+scipy==1.17.0
+scikit-learn==1.8.0
+matplotlib==3.10.8
+networkx==3.6.1
+pillow==11.3.0
+
+# --- LLM / agent frameworks ---
+langchain==1.2.15
+langchain-core==1.3.0
+langchain-openai==1.1.14
+langchain-ollama==1.0.1
+langgraph==1.1.8
+deepagents==0.5.3
+openai==2.32.0
+dashscope==1.25.7
+tiktoken==0.12.0
+
+# --- Core utilities ---
+httpx==0.28.1
+requests==2.34.2
+tqdm==4.67.1
+python-dotenv==1.2.1
+pydantic==2.12.5
+typing-extensions==4.15.0
+streamlit==1.41.1
